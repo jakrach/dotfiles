@@ -38,6 +38,7 @@ declare -a FILES_TO_UNLINK=(
   'shell/gdbinit'
   'shell/tmux.conf'
   'shell/zshrc'
+  'shell/zsh'
 
   'bin'
   'powerline'
@@ -51,8 +52,3 @@ for i in ${FILES_TO_UNLINK[@]}; do
     execute "unlink $targetFile" "$targetFile"
   fi
 done
-
-# Unlink custom zsh theme.
-targetFile="$HOME/.oh-my-zsh/custom/pickles.zsh-theme"
-execute "unlink $targetFile" "$targetFile"
-

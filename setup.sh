@@ -91,6 +91,7 @@ declare -a FILES_TO_SYMLINK=(
   'shell/tmux.conf'
   'shell/tmux-theme'
   'shell/zshrc'
+  'shell/zsh'
 
   'bin'
   'powerline'
@@ -122,9 +123,3 @@ for i in ${FILES_TO_SYMLINK[@]}; do
     fi
   fi
 done
-
-# Link custom zsh theme.
-sourceFile="$(pwd)/themes/pickles.zsh-theme"
-targetFile="$HOME/.oh-my-zsh/custom/pickles.zsh-theme"
-execute "ln -fs $sourceFile $targetFile" "$targetFile → $sourceFile"
-
