@@ -4,6 +4,7 @@ ZSH_THEME="agnoster"
 plugins=(git colored-man-pages)
 
 export EDITOR='vim'
+export PATH="$PATH:$HOME/.bin"
 
 DISABLE_UPDATE_PROMPT=true
 source $ZSH/oh-my-zsh.sh
@@ -15,7 +16,7 @@ else
 fi
 
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-hightlighting.zsh
+source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Explicity bind home and end keys (in case of terminal compatibility issues)
 bindkey "${terminfo[khome]}" beginning-of-line
