@@ -16,7 +16,7 @@ will need to set up solarized and compatible fonts beforehand, however. There
 are files in the `new_machine` directory that can be used to set those up.
 
 ```bash
-git clone https://github.com/MrPickles/dotfiles.git --recursive ~/.dotfiles
+git clone https://github.com/jakrach/dotfiles.git --recursive ~/.dotfiles
 cd ~/.dotfiles
 ./setup.sh
 ```

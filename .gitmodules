@@ -10,3 +10,6 @@
 [submodule "editor/vim/bundle/Vundle.vim"]
 	path = editor/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "shell/shell/tmux-theme"]
+	path = shell/shell/tmux-theme
+	url = https://github.com/jimeh/tmux-themepack.git
