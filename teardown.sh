@@ -37,11 +37,11 @@ declare -a FILES_TO_UNLINK=(
   'shell/dircolors.256dark'
   'shell/gdbinit'
   'shell/tmux.conf'
+  'shell/tmux-theme'
   'shell/zshrc'
   'shell/zsh'
 
   'bin'
-  'powerline'
 )
 
 for i in ${FILES_TO_UNLINK[@]}; do

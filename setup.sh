@@ -94,7 +94,6 @@ declare -a FILES_TO_SYMLINK=(
   'shell/zsh'
 
   'bin'
-  'powerline'
 )
 
 # Prompt to switch to zsh and oh-my-zsh if not active on terminal.
