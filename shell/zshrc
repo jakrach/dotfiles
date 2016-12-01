@@ -18,6 +18,10 @@ fi
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/research/gocode:/usr/local/go
+export PATH=$PATH:$home/research/gocode/bin
+
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=gray'
 
 # Explicity bind home and end keys (in case of terminal compatibility issues)

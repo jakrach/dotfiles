@@ -2,3 +2,4 @@ set disassembly-flavor intel
 
 # Source local gdbinit
 add-auto-load-safe-path ~/.gdbinit.local
+add-auto-load-safe-path /home/jeremy/code/geekos/build/.gdbinit
