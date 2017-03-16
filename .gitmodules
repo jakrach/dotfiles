@@ -3,7 +3,7 @@
 	url = git@github.com:Anthony25/gnome-terminal-colors-solarized.git
 [submodule "new_machine/fonts"]
 	path = new_machine/fonts
-	url = git@github.com:powerline/fonts.git
+	url = https://github.com:powerline/fonts.git
 [submodule "editor/vim/bundle/Vundle.vim"]
 	path = editor/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
