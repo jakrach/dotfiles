@@ -18,7 +18,7 @@ fi
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=gray'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 
 # Explicity bind home and end keys (in case of terminal compatibility issues)
 bindkey "${terminfo[khome]}" beginning-of-line
