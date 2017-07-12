@@ -43,13 +43,16 @@ else
     set ttymouse=xterm2
 end
 
+" Highlight the current line
+set cursorline
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
 
-colorscheme monokai
+colorscheme Monokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
