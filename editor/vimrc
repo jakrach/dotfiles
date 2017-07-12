@@ -52,7 +52,7 @@ set cursorline
 " Enable syntax highlighting
 syntax enable
 
-colorscheme Monokai
+colorscheme monokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
