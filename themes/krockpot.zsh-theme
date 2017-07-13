@@ -30,7 +30,7 @@ function virtualenv_info {
 }
 
 if [[ -n "$SSH_CLIENT" ]]; then
-    PROMPT_HOST='%{%b%F{gray}%K{black}%} %(?.%{%F{green}%}✔.%{%F{red}%}✘)%{%F{cyan}%} %n@%m %{%F{black}%}'
+    PROMPT_HOST='%{%b%F{gray}%K{black}%} %(?.%{%F{green}%}✔.%{%F{red}%}✘)%{%F{magenta}%} %n@%m %{%F{black}%}'
 else
     PROMPT_HOST='%{%b%F{gray}%K{black}%} %(?.%{%F{green}%}✔.%{%F{red}%}✘)%{%F{yellow}%} %n %{%F{black}%}'
 fi
