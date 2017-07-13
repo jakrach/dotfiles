@@ -122,3 +122,8 @@ for i in ${FILES_TO_SYMLINK[@]}; do
     fi
   fi
 done
+
+# Link custom zsh theme.
+sourceFile="$(pwd)/themes/krockpot.zsh-theme"
+targetFile="$HOME/.oh-my-zsh/custom/krockpot.zsh-theme"
+execute "ln -fs $sourceFile $targetFile" "$targetFile → $sourceFile"
