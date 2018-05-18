@@ -3,3 +3,13 @@
 # your home directory as ~/.zshrc.local.
 
 DEFAULT_USER="foobar" # Set default username.
+
+# Set special path
+export PATH=$PATH:~/special-binaries/
+
+# Setup Golang
+# export GOROOT=
+# export GOPATH=
+# export PATH=...gopath/bin:goroot/bin
+
+# aliases

@@ -46,6 +46,13 @@ end
 " Highlight the current line
 set cursorline
 
+" split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -97,11 +104,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-lastplace'
 Plugin 'seagoj/overlength.vim'
 Plugin 'scrooloose/syntastic'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'Shougo/neocomplete'
 Plugin 'majutsushi/tagbar'
 Plugin 'flazz/vim-colorschemes'
 
@@ -128,6 +134,8 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
+let g:go_def_mode = "godef"
 " syntastic characters
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_style_error_symbol = '✠'
@@ -145,23 +153,13 @@ autocmd FileType go nmap <leader>ds <plug>(go-def-split)
 autocmd FileType go nmap <leader>dv <plug>(go-def-vertical)
 autocmd FileType go nmap <leader>dt <plug>(go-def-tab)
 autocmd FileType go nmap gd <plug>(go-def-split)
-" neocomplete
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-set completeopt-=preview
-" neosnippet
-let g:neosnippet#snippets_directory="~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets"
-let g:neosnippet#enable_snipmate_compatibility=1
-
-imap <expr> <tab> neosnippet#expandable_or_jumpable() ? "\<plug>(neosnippet_expand_or_jump)" : (pumvisible() ? "\<c-n>" : "\<tab>")
-smap <expr> <tab> neosnippet#expandable_or_jumpable() ? "\<plug>(neosnippet_expand_or_jump)" : "\<tab>"
-imap <expr> <s-tab> pumvisible() ? "\<c-p>" : ""
-smap <expr> <s-tab> pumvisible() ? "\<c-p>" : ""
-
-let g:go_snippet_engine = "neosnippet"
-let g:go_fmt_command = "goimports"
-let g:neosnippet#snippets_directory .= "," . globpath(&rtp, "gosnippets/snippets")
+" disable ycm autoconfirmation
+let g:ycm_confirm_extra_conf = 0
+" get identifiers from tag files
+let g:ycm_collect_identifiers_from_tags_files = 1
+" use ycm's goto def, instead of vim's default
+nnoremap gd :YcmCompleter GoTo<CR>
+nnoremap gl :YcmCompleter FixIt<CR>
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_width = 80
