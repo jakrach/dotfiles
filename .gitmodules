@@ -7,12 +7,12 @@
 [submodule "editor/vim/bundle/Vundle.vim"]
 	path = editor/vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "shell/tmux-theme"]
-	path = shell/tmux-theme
-	url = https://github.com/jimeh/tmux-themepack.git
 [submodule "shell/zsh/zsh-autosuggestions"]
 	path = shell/zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "shell/zsh/zsh-syntax-highlighting"]
 	path = shell/zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "shell/tmux-power"]
+	path = shell/tmux-power
+	url = git@github.com:wfxr/tmux-power.git

@@ -89,7 +89,7 @@ declare -a FILES_TO_SYMLINK=(
   'shell/dircolors'
   'shell/gdbinit'
   'shell/tmux.conf'
-  'shell/tmux-theme'
+  'shell/tmux-power'
   'shell/zshrc'
   'shell/zsh'
 

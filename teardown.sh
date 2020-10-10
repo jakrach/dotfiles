@@ -37,7 +37,7 @@ declare -a FILES_TO_UNLINK=(
   'shell/dircolors.256dark'
   'shell/gdbinit'
   'shell/tmux.conf'
-  'shell/tmux-theme'
+  'shell/tmux-power'
   'shell/zshrc'
   'shell/zsh'
 
